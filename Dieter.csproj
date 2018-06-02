@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85F95CA3-8B25-499F-8FEB-01CC7A8D719F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dieter</RootNamespace>
+    <AssemblyName>Dieter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Cheat Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Cheat Guide.Designer.cs">
+      <DependentUpon>Add Cheat Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Diet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Diet.Designer.cs">
+      <DependentUpon>Add Diet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Guide.Designer.cs">
+      <DependentUpon>Add Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add New Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add New Admin.Designer.cs">
+      <DependentUpon>Add New Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Program.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Program.Designer.cs">
+      <DependentUpon>Add Program.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Recipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Recipe.Designer.cs">
+      <DependentUpon>Add Recipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Workout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Workout.Designer.cs">
+      <DependentUpon>Add Workout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddForm.Designer.cs">
+      <DependentUpon>AddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Diet_Prog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Diet_Prog.Designer.cs">
+      <DependentUpon>Add_Diet_Prog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Form.Designer.cs">
+      <DependentUpon>Admin Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin Login.Designer.cs">
+      <DependentUpon>Admin Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Board.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Board.Designer.cs">
+      <DependentUpon>Board.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change Admin Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change Admin Password.Designer.cs">
+      <DependentUpon>Change Admin Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cheat Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cheat Guide.Designer.cs">
+      <DependentUpon>Cheat Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Datacontainer.cs" />
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DBManager.cs" />
+    <Compile Include="Dieter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dieter.Designer.cs">
+      <DependentUpon>Dieter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DietGuide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DietGuide.Designer.cs">
+      <DependentUpon>DietGuide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diets and Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diets and Programs.Designer.cs">
+      <DependentUpon>Diets and Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diets.Designer.cs">
+      <DependentUpon>Diets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DietsNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DietsNT.Designer.cs">
+      <DependentUpon>DietsNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Nutritionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit Nutritionist.Designer.cs">
+      <DependentUpon>Edit Nutritionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit Progress Diary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit Progress Diary.Designer.cs">
+      <DependentUpon>edit Progress Diary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Editing info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Editing info.Designer.cs">
+      <DependentUpon>Editing info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Guide.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guide.Designer.cs">
+      <DependentUpon>Guide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JoininForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JoininForm.Designer.cs">
+      <DependentUpon>JoininForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Log in.Designer.cs">
+      <DependentUpon>Log in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nutritionst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nutritionst.Designer.cs">
+      <DependentUpon>Nutritionst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment Details Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment Details Form.Designer.cs">
+      <DependentUpon>Payment Details Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Premium Dieter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Premium Dieter.Designer.cs">
+      <DependentUpon>Premium Dieter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programs.Designer.cs">
+      <DependentUpon>Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProgramsNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgramsNT.Designer.cs">
+      <DependentUpon>ProgramsNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Progress Diary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Progress Diary.Designer.cs">
+      <DependentUpon>Progress Diary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Recipes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipes.Designer.cs">
+      <DependentUpon>Recipes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add Supplement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Supplement.Designer.cs">
+      <DependentUpon>Add Supplement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign up Premium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign up Premium.Designer.cs">
+      <DependentUpon>Sign up Premium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign Up.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign Up.Designer.cs">
+      <DependentUpon>Sign Up.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Signing up Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signing up Options.Designer.cs">
+      <DependentUpon>Signing up Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StoredProcedures.cs" />
+    <Compile Include="Supplements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplements.Designer.cs">
+      <DependentUpon>Supplements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trainer.Designer.cs">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Unsubscribe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Unsubscribe.Designer.cs">
+      <DependentUpon>Unsubscribe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Dieters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Dieters.Designer.cs">
+      <DependentUpon>View Dieters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Nutritionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Nutritionist.Designer.cs">
+      <DependentUpon>View Nutritionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Nutritionists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Nutritionists.Designer.cs">
+      <DependentUpon>View Nutritionists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Trainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Trainer.Designer.cs">
+      <DependentUpon>View Trainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Trainers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Trainers.Designer.cs">
+      <DependentUpon>View Trainers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Workouts and Programs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workouts and Programs.Designer.cs">
+      <DependentUpon>Workouts and Programs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome.Designer.cs">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Workouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Workouts.Designer.cs">
+      <DependentUpon>Workouts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkoutsNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkoutsNT.Designer.cs">
+      <DependentUpon>WorkoutsNT.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Cheat Guide.resx">
+      <DependentUpon>Add Cheat Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Diet.resx">
+      <DependentUpon>Add Diet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Guide.resx">
+      <DependentUpon>Add Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add New Admin.resx">
+      <DependentUpon>Add New Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Program.resx">
+      <DependentUpon>Add Program.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Recipe.resx">
+      <DependentUpon>Add Recipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Workout.resx">
+      <DependentUpon>Add Workout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Diet_Prog.resx">
+      <DependentUpon>Add_Diet_Prog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Form.resx">
+      <DependentUpon>Admin Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin Login.resx">
+      <DependentUpon>Admin Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Board.resx">
+      <DependentUpon>Board.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change Admin Password.resx">
+      <DependentUpon>Change Admin Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cheat Guide.resx">
+      <DependentUpon>Cheat Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dieter.resx">
+      <DependentUpon>Dieter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DietGuide.resx">
+      <DependentUpon>DietGuide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diets and Programs.resx">
+      <DependentUpon>Diets and Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diets.resx">
+      <DependentUpon>Diets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DietsNT.resx">
+      <DependentUpon>DietsNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Nutritionist.resx">
+      <DependentUpon>Edit Nutritionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit Progress Diary.resx">
+      <DependentUpon>edit Progress Diary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Editing info.resx">
+      <DependentUpon>Editing info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guide.resx">
+      <DependentUpon>Guide.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JoininForm.resx">
+      <DependentUpon>JoininForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Log in.resx">
+      <DependentUpon>Log in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nutritionst.resx">
+      <DependentUpon>Nutritionst.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment Details Form.resx">
+      <DependentUpon>Payment Details Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Premium Dieter.resx">
+      <DependentUpon>Premium Dieter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programs.resx">
+      <DependentUpon>Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgramsNT.resx">
+      <DependentUpon>ProgramsNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress Diary.resx">
+      <DependentUpon>Progress Diary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipes.resx">
+      <DependentUpon>Recipes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add Supplement.resx">
+      <DependentUpon>Add Supplement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Sign up Premium.resx">
+      <DependentUpon>Sign up Premium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign Up.resx">
+      <DependentUpon>Sign Up.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signing up Options.resx">
+      <DependentUpon>Signing up Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplements.resx">
+      <DependentUpon>Supplements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trainer.resx">
+      <DependentUpon>Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Unsubscribe.resx">
+      <DependentUpon>Unsubscribe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Dieters.resx">
+      <DependentUpon>View Dieters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Nutritionist.resx">
+      <DependentUpon>View Nutritionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Nutritionists.resx">
+      <DependentUpon>View Nutritionists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Trainer.resx">
+      <DependentUpon>View Trainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Trainers.resx">
+      <DependentUpon>View Trainers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Workouts and Programs.resx">
+      <DependentUpon>Workouts and Programs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome.resx">
+      <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Workouts.resx">
+      <DependentUpon>Workouts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkoutsNT.resx">
+      <DependentUpon>WorkoutsNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App1.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsc">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet3.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet3.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet3.xss">
+      <DependentUpon>DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
